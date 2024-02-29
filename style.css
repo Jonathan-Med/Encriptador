@@ -193,7 +193,7 @@
     margin-right: 10px; 
 
 }
-@media only screen and (min-width: 769px) and (max-width: 1024px) and (max-resolution: 299dpi) {
+@media only screen and (min-width: 769px) and (max-width: 1025px) and (min-resolution: 150dpi) and (max-resolution: 250dpi) {
     
     .encabezado {
         width: 100%;
@@ -275,7 +275,7 @@
 
 }
 
-@media only screen and (max-width: 768px) and (min-resolution: 300dpi)   {
+@media only screen and (max-width: 768px) and (min-resolution: 251dpi)   {
 
     .encabezado {
         width: 100%;
@@ -303,7 +303,7 @@
         width: 100%;
         text-align: center;
         display: block;
-        margin: 1em auto 1em auto;
+        margin: 2em auto 1em auto;
     }
 
     .texto {
