@@ -185,7 +185,7 @@
     background-color: #5b5dfa;
 }
 
-@media screen and (max-width: 1080px) or (min-resolution: 150dpi) and (max-resolution: 319dpi){
+@media screen and (max-width: 1080px) or (min-resolution: 150dpi) and (max-resolution:299dpi){
     
     .encabezado {
         width: 100%;
@@ -262,7 +262,7 @@
 
 }
 
-@media screen and (max-width: 600px)  {
+@media screen and (max-width: 600px) or (min-resolution: 300dpi) {
 
     .encabezado {
         width: 100%;
