@@ -193,7 +193,7 @@
     margin-right: 10px; 
 
 }
-@media screen and (min-resolution: 150dpi) and (max-resolution:299dpi) or (max-width: 1080px){
+@media screen and (max-width: 1080px) or (min-resolution: 150dpi) and (max-resolution:299dpi){
     
     .encabezado {
         width: 100%;
