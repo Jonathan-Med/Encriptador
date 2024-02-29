@@ -19,30 +19,34 @@
 
     <body>
 
-        <header>
-
-            <div class="encabezado">
-
-                <img class="logo" src="imagenes/Logo.png" alt="Logo de la pagina" />
-                <h1 class="titulo">Encriptador</h1>
-
-            </div>
-
-        </header>
-
         <main class="encriptador">
 
-            <section class="entrada">
-                <textarea type="text" id="textoDeEntrada" class="texto" rows="9" cols="35" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="prueba">
+                <header>
 
-                <p class="aviso">Solo se admiten letras en minúscula y sin acento</p>
+                    <div class="encabezado">
 
-                <div class="botones">
-                    <button onclick="encriptar()"  class="encriptar" >Encriptar</button>
-                    <button onclick="desencriptar()"  class="desencriptar" >Desencriptar</button>
-                </div>
+                        <img class="logo" src="imagenes/Logo.png" alt="Logo de la pagina" />
+                        <h1 class="titulo">Encriptador</h1>
 
-            </section>
+                    </div>
+
+                </header>
+
+            
+                <section class="entrada">
+                    <textarea type="text" id="textoDeEntrada" class="texto" rows="8" cols="35" placeholder="Ingrese el texto aquí"></textarea>
+
+                    <p class="aviso">Solo se admiten letras en minúscula y sin acento</p>
+
+                    <div class="botones">
+                        <button onclick="encriptar()"  class="encriptar" >Encriptar</button>
+
+                        <button onclick="desencriptar()"  class="desencriptar" >Desencriptar</button>
+                    </div>
+
+                </section>
+            </div>
 
             <section class="salida">
 
@@ -57,6 +61,8 @@
             </section>
 
         </main>
+
+        <footer class="footer" role="contacto" >&copy; Jonathan Medina Herrera</footer>
 
         <script src="script.js"></script>
 

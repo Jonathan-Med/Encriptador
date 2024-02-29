@@ -21,7 +21,7 @@ function limpiarTextos() {
 }
 
 function aviso() {
-    if (texto.value != "") {
+    if (texto.value !== "") {
         aviso_animado.classList.add("animar_aviso");
         setTimeout(() => {
             aviso_animado.classList.remove("animar_aviso");
@@ -31,7 +31,7 @@ function aviso() {
 }
 
 function encriptar() {
-    if (/^[a-z]+$/.test(texto.value) && texto.value != ""){
+    if (/^[a-z\s]+$/.test(texto.value)) {
         var anchoPantalla = verificarAnchoPantalla();
         const textoEncriptado = texto.value
             .replace(/e/gi, "enter")
@@ -46,10 +46,10 @@ function encriptar() {
         resultadoTitulo.style.display = "none";
         resultadoTexto.style.display = "none";
         btnCopiar.style.display = "inline-block";
-        if (anchoPantalla >= 1000){
-            resultado.style.height = "430px";
+        if (anchoPantalla >= 1081){
+            resultado.style.height = "380px";
         }
-        else if (anchoPantalla <= 1000){
+        else if (anchoPantalla <= 1080){
             resultado.style.display = "inline-block";
             salida.style.height = "550px";
             resultado.style.height = "450px";
@@ -63,7 +63,7 @@ function encriptar() {
 }
 
 function desencriptar() {
-    if (/^[a-z]+$/.test(texto.value) && texto.value != "") {
+    if (/^[a-z\s]+$/.test(texto.value)) {
         const textoDesencriptado = texto.value
             .replace(/enter/gi, "e")
             .replace(/imes/gi, "i")

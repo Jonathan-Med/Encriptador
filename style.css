@@ -3,9 +3,18 @@
     background: #e6e6e6;
 }
 
+.prueba {
+    flex-grow: 1;
+}
+
+.encriptador {
+    display: flex;
+}
+
 .encabezado {
-    width: 940px;
+    width: 920px;
     padding: 2%;
+    display: flex;
 }
 
 .titulo {
@@ -18,10 +27,9 @@
 }
 
 .entrada {
-    display: inline-block;
-    width: 63%;
-    padding: 1.5% 1% 1% 1.5%;
-    margin: 0 0 0 8%;
+    display: block;
+    width: 90%;
+    margin: auto 5%; 
     text-align: center;
 }
 
@@ -29,7 +37,7 @@
     color: darkblue;
     background: #e6e6e6;
     font-family: 'Inter', sans-serif;
-    margin: 0 10px 0 0;
+    margin: 0 10px 0 10px;
     font-size: 200%;
     resize: none;
     border: none;
@@ -42,7 +50,7 @@
 }
 
 .aviso {
-    padding: 0 0 0 7%;
+    padding: 0 0 0 9%;
     text-align: left;
     font-size: 12px;
     margin: 1.5%;
@@ -62,11 +70,17 @@
 
 }
 
+.botones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .encriptar {
     font-family: 'Inter', sans-serif;
     width: 300px;
     padding: 15px 0;
-    margin: 0 5% 0 5%;
+    margin: 0 5% 0 0%;
     font-size: 125%;
     font-weight: bold;
     color: white;
@@ -86,7 +100,7 @@
     font-family: 'Inter', sans-serif;
     width: 300px;
     padding: 15px 0;
-    margin: 0 5% 0 5%;
+    margin: 0 5% 0 0%;
     font-size: 125%;
     font-weight: bold;
     color: #3135ff;
@@ -103,23 +117,21 @@
 }
 
 .salida {
-    position: absolute;
-    text-align: center;
-    top: 15px;
-    right: 15px;
     display: inline-block;
-    width: 29%;
-    height: 95%;
+    width: 31%;
+    height: 500px;
+    margin: 1% 1%;
+    text-align: center;
     background: white;
     border-radius: 25px;
-    box-shadow: 0px 0px 5px 5px #808080;
+    box-shadow: 0px 0px 5px 5px #979797;
 }
 
 .resultado {
     display: inline-block;
     font-family: 'Inter', sans-serif;
     width: 350px;
-    height: 300px;
+    height: 275px;
     color: #363636;
     font-size: 150%;
     margin: 8% 0 0 0;
@@ -147,9 +159,9 @@
 
 .copiar {
     font-family: 'Inter', sans-serif;
-    position: absolute;
+    position: flex;
+    justify-content: center;
     bottom: 25px;
-    right: 45px;
     width: 300px;
     padding: 15px 0;
     font-size: 125%;
@@ -163,7 +175,17 @@
     display: none;
 }
 
-@media screen and (max-width: 1000px) {
+.footer {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    bottom: 0%;
+    margin-top: 10px;
+    padding-top: 50px;
+    background-color: #5b5dfa;
+}
+
+@media screen and (max-width: 1080px) {
     
     .encabezado {
         width: 100%;
@@ -175,6 +197,10 @@
         display: inline-block;
     }
 
+    .encriptador {
+        display: block;
+    }
+
     .entrada {
         width: 100%;
         text-align: center;
@@ -184,16 +210,17 @@
     }
 
     .texto {
-        width: 90%;
+        width: 93%;
         height: 520px;
     }
 
     .salida {
         width: 93%;
-        position: relative;
+        position: flex;
+        justify-content: center;
+        margin: 0% 3%;
         text-align: center;
         padding: 1% 0;
-        margin-left: 5%;
         height: 150px;
     }
 
@@ -230,7 +257,7 @@
         width: 90%;
     }
 
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 600px) {
 
         .texto {
             height: 375px;
@@ -245,8 +272,10 @@
 
         .salida {
             width: 90%;
-            padding-left: 20px;
-            align-items: center;
+            position: flex;
+            justify-content: center;
+            margin: 0% 5%;
+            text-align: center;
         }
 
         .resultado-titulo {
