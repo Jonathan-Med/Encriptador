@@ -193,7 +193,7 @@
     margin-right: 10px; 
 
 }
-@media only screen and (min-width: 769px) and (max-width: 1025px) and (min-resolution: 150dpi) and (max-resolution: 250dpi) {
+@media only screen and (min-width: 769px) and (max-width: 1025px) and (min-resolution: 100dpi) and (max-resolution: 270dpi) {
     
     .encabezado {
         width: 100%;
@@ -275,7 +275,7 @@
 
 }
 
-@media only screen and (max-width: 768px) and (min-resolution: 251dpi)   {
+@media only screen and (max-width: 768px) and (min-resolution: 200dpi)   {
 
     .encabezado {
         width: 100%;
