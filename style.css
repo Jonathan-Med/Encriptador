@@ -209,7 +209,7 @@
         text-align: center;
         display: block;
         position: relative;
-        margin: auto auto 2em auto;
+        margin: auto auto 1em auto;
     }
 
     .texto {
@@ -260,57 +260,100 @@
         width: 90%;
     }
 
-    @media screen and (max-width: 600px) or (min-resolution: 320dpi) {
+}
 
-        .titulo {
-            margin: auto 0 0 0;
-        }
+@media screen and (max-width: 600px)  {
 
-        .texto {
-            height: 375px;
-        }
-        
-        .encriptar, .desencriptar {
-            width: 90%;
-            display: inline-block;
-            padding: 0.75em 0;
-            margin: 5px auto;
-        }
-
-        .salida {
-            width: 90%;
-            position: flex;
-            justify-content: center;
-            margin: 0% 5%;
-            text-align: center;
-        }
-
-        .resultado-titulo {
-            width: 95%;
-            text-align: center;
-            font-size: 150%;
-            margin: 2% 0 0 0;
-            
-        }
-        
-        .resultado-texto {
-            width: 95%;
-            margin: 2% 0 0 0;
-            font-size: 125%;
-            text-align: center;
-        }
-
-        .resultado{
-            width: 85%;
-            margin: auto;
-        }
-
-        .copiar {
-            width: 85%;
-            padding: 0.75em 0;
-            margin: auto;
-        }
+    .encabezado {
+        width: 100%;
+        padding: 5% 0 0 0;
+        text-align: center;
 
     }
+
+    .logo { 
+        width: 30%;
+    }
+
+    .titulo {
+        display: inline-block;
+        margin: auto 0;
+        font-size: 225%;
+        
+    }
+
+    .encriptador {
+        display: block;
+    }
+
+    .entrada {
+        width: 100%;
+        text-align: center;
+        display: block;
+        position: relative;
+        margin: 1em auto 1em auto;
+    }
+
+    .texto {
+        width: 93%;
+        height: 70%;
+    }
+    
+    .encriptar, .desencriptar {
+        width: 90%;
+        display: inline-block;
+        padding: 0.75em 0;
+        margin: 5px auto;
+    }
+
+    .salida {
+        width: 90%;
+        position: flex;
+        justify-content: center;
+        margin: 0% 5%;
+        text-align: center;
+        padding: 1% 0;
+        height: 20%;
+    }
+
+    .resultado {
+        width: 92%;
+        position: relative;
+        background-image: none;
+        margin: 1.5%;
+        padding: 1% 1%;
+        display: none;
+    }
+
+    .resultado-titulo {
+        width: 95%;
+        text-align: center;
+        font-size: 150%;
+        margin: 2% 0 0 0;
+        
+    }
+    
+    .resultado-texto {
+        width: 95%;
+        margin: 2% 0 0 0;
+        font-size: 125%;
+        text-align: center;
+    }
+
+    .resultado{
+        width: 85%;
+        margin: auto;
+    }
+
+    .copiar {
+        width: 85%;
+        padding: 0.75em 0;
+        margin: auto;
+    }
+
+    .footer {
+        height: 10%;
+    }
+
 }
 
