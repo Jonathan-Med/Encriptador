@@ -77,7 +77,14 @@ function desencriptar() {
         resultadoTitulo.style.display = "none";
         resultadoTexto.style.display = "none";
         btnCopiar.style.display = "inline-block";
-        resultado.style.height = "430px";
+        if (anchoPantalla >= 1081){
+            resultado.style.height = "380px";
+        }
+        else if (anchoPantalla <= 1080){
+            resultado.style.display = "inline-block";
+            salida.style.height = "550px";
+            resultado.style.height = "450px";
+        }
     }
     else 
     {
