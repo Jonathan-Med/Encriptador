@@ -65,8 +65,8 @@ function encriptar() {
 function desencriptar() {
     if (/^[a-z\s]+$/.test(texto.value)) {
         const textoDesencriptado = texto.value
-            .replace(/enter/gi, "e")
             .replace(/imes/gi, "i")
+            .replace(/enter/gi, "e")
             .replace(/ai/gi, "a")
             .replace(/ober/gi, "o")
             .replace(/ufat/gi, "u");
